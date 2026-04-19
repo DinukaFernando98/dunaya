@@ -42,7 +42,6 @@ export default function Hero() {
 
       {/* Text content */}
       <motion.div
-        style={{ y: textY, opacity }}
         className="absolute inset-0 z-10 flex flex-col justify-center"
         style={{ paddingLeft: "clamp(32px, 6vw, 96px)", y: textY, opacity }}
       >
