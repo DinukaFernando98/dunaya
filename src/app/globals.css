@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+@import "tailwindcss";
+
+:root {
+  --ink: #09080A;
+  --paper: #F2EDE4;
+  --gold: #C9A876;
+  --gold-dim: #8C7450;
+  --muted: #4A4040;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  cursor: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  background: var(--ink);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold-dim);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #C9A876 0%, #EDD89A 50%, #C9A876 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
